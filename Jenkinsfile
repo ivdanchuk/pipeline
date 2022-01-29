@@ -11,7 +11,8 @@ pipeline {
             steps {
                 // Get some code from a GitHub repository
                 git 'https://github.com/ivdanchuk/pipeline.git'
-				git checkout dev
+				
+				//git checkout dev
 
                 // To run Maven on a Windows agent, use
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
