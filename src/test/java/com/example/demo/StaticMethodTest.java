@@ -15,7 +15,8 @@ import static org.powermock.api.mockito.PowerMockito.*;
 public class StaticMethodTest {
     @Test
     public void Test1 (){
-        mockStatic(StaticMethod.class);
+        //ok
+		mockStatic(StaticMethod.class);
         when(StaticMethod.Hello()).thenReturn("Hello Baeldung!");
         String firstWelcome = StaticMethod.Hello();
         assertEquals("Hello Baeldung!", firstWelcome);
