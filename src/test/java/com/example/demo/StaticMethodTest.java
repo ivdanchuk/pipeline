@@ -20,6 +20,7 @@ public class StaticMethodTest {
         when(StaticMethod.Hello()).thenReturn("Hello Baeldung!");
         String firstWelcome = StaticMethod.Hello();
         assertEquals("Helo Baeldung!", firstWelcome);
+<<<<<<< HEAD
     }
     @Test
     public void Test2 (){
@@ -27,6 +28,8 @@ public class StaticMethodTest {
         when(StaticMethod.Hello()).thenReturn("Hello Baeldung!");
         String firstWelcome = StaticMethod.Hello();
         assertEquals("Hello Baeldung!", firstWelcome);
+=======
+>>>>>>> dev
     }
 
 }
