@@ -21,4 +21,12 @@ public class StaticMethodTest {
         String firstWelcome = StaticMethod.Hello();
         assertEquals("Helo Baeldung!", firstWelcome);
     }
+    @Test
+    public void Test2 (){
+        mockStatic(StaticMethod.class);
+        when(StaticMethod.Hello()).thenReturn("Hello Baeldung!");
+        String firstWelcome = StaticMethod.Hello();
+        assertEquals("Hello Baeldung!", firstWelcome);
+    }
+
 }
